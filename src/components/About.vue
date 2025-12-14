@@ -132,4 +132,59 @@ span {
   flex-direction: column;
   gap: 4px;
 }
+
+@media (max-width: 1024px) {
+  .top {
+    width: 70%;
+  }
+
+  .content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    width: 100%;
+    margin-bottom: 6%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .skills {
+    gap: 24px;
+  }
+
+  .skill-category {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  h4, span {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .competences .tit {
+    font-size: 20px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skill-category {
+    width: calc(50% - 10px);
+    min-width: unset;
+  }
+}
 </style>

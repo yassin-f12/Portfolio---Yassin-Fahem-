@@ -18,7 +18,7 @@ const projects = [
     title: "ADEIR Platform Rebuild (coming soon...)",
     description: "A complete rebuild of Adeir's website using Vue.js and PHP, featuring a modern, responsive frontend, enhanced backend functionality, and developed as part of a collaborative team project.",
     image: adeir,
-    link: ''
+    link: 'https://www.adeir.fr/'
   },
   {
     id: 3,
@@ -72,5 +72,17 @@ const projects = [
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 32px;
+}
+
+@media (max-width: 1200px) {
+  .projects-flex {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 968px) {
+  .projects-flex {
+    justify-content: center;
+  }
 }
 </style>

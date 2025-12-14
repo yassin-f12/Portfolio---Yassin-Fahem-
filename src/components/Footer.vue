@@ -96,4 +96,28 @@ const year = new Date().getFullYear()
   text-decoration: none;
   color: #374141;
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-text {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+
+  .footer-links svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cv-link {
+    font-size: 11px;
+  }
+}
 </style>

@@ -97,6 +97,12 @@ defineProps({
   line-height: 1.4em;
 }
 
+@media (max-width: 1200px) {
+  .project-card {
+    max-width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
   .project-card {
     max-width: 100%;

@@ -216,4 +216,38 @@ textarea:focus {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 1324px) {
+  .form {
+    width: 35%;
+  }
+}
+
+@media (max-width: 968px) {
+  .form {
+    width: 60%;
+  }
+
+  .marg {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 85%;
+  }
+
+  .marg {
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 11px;
+  }
+
+  input, textarea {
+    padding: 10px;
+  }
+}
 </style>
