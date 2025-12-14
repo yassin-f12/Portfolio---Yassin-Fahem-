@@ -13,10 +13,10 @@ const sendEmail = async (e) => {
 
   try {
     await emailjs.sendForm(
-      'service_twmsv4h',      
-      'template_srqsxo7',     
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.value,
-      'K7mRcaU9Bbv2IvYuY'       
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY   
     )
     
     submitStatus.value = 'success'
