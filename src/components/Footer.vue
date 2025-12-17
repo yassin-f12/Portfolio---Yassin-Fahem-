@@ -40,7 +40,7 @@ const year = new Date().getFullYear()
       </a>
 
       <a
-        href="`${import.meta.env.BASE_URL}CV_Yassin_Fahem.pdf`" 
+        href="/Portfolio---Yassin-Fahem-/CV_Yassin_Fahem.pdf" 
         target="_blank"
         rel="noopener noreferrer"
         class="cv-link"
