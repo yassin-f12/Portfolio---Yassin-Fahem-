@@ -39,15 +39,14 @@ const year = new Date().getFullYear()
         </svg>
       </a>
 
-      <!--cv a mettre dans public en .pdf-->
       <a
-        href="#" 
+        href="/CV_Yassin_Fahem.pdf" 
         target="_blank"
         rel="noopener noreferrer"
         class="cv-link"
         title="View CV"
       >
-        CV (coming soon...)
+        CV 
       </a>
     </div>
   </footer>
