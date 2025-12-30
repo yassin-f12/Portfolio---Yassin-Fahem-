@@ -1,9 +1,25 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import CardProjects from './CardProjects.vue';
 import portfolio from '@/assets/img/portfolio.webp'
 import adeir from '@/assets/img/adeir.webp'
 import rps from '@/assets/img/rps.webp'
 import psg from '@/assets/img/psg.webp'
+
+const isMobile = ref(false);
+
+const checkMobile = () => {
+  isMobile.value = window.innerWidth <= 768;
+};
+
+onMounted(() => {
+  checkMobile();
+  window.addEventListener('resize', checkMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile);
+});
 
 const projects = [
   {
@@ -34,8 +50,14 @@ const projects = [
     image: psg,
     link: 'https://projetfoot.infinityfreeapp.com/'
   }
-
 ]
+
+const getProjectLink = (project) => {
+  if (project.id === 3 && isMobile.value) {
+    return '';
+  }
+  return project.link;
+};
 </script>
 
 <template>
@@ -49,7 +71,7 @@ const projects = [
         :image="project.image"
         :title="project.title"
         :description="project.description"
-        :link="project.link"
+        :link="getProjectLink(project)"
       />
     </div>
   </section>

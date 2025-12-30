@@ -18,6 +18,8 @@
       <div class="skill-category">
         <span>Front-End</span>
         <div class="stack">
+          <p>HTML5 / CSS3</p>
+          <p>JavaScript</p>
           <p>Vue.js</p>
           <p>React</p>
           <p>Sass</p>
@@ -27,8 +29,9 @@
       <div class="skill-category">
         <span>Back-End</span>
         <div class="stack">
-          <p>PHP</p>
-          <p>MVC</p>
+          <p>PHP 8</p>
+          <p>API REST (CRUD)</p>
+          <p>MVC Architecture</p>
           <p>Form Handling</p>
         </div>
       </div>
@@ -37,7 +40,7 @@
         <div class="stack">
           <p>MySQL</p>
           <p>Docker</p>
-          <p>GitLab</p>
+          <p>Git</p>
         </div>
       </div>
       <div class="skill-category">

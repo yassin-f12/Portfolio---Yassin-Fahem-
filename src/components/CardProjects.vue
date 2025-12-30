@@ -59,6 +59,19 @@ defineProps({
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
 }
 
+.project-card.no-link {
+  cursor: default;
+}
+
+.project-card.no-link:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.project-card.no-link:hover img {
+  transform: none;
+}
+
 .image-wrapper {
   position: relative;
   height: 200px;
