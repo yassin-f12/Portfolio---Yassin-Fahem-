@@ -37,18 +37,18 @@ const sendEmail = async (e) => {
 <template>
   <section id="contact" class="contact">
     <div class="top">
-      <h6 class="marg">Get In Touch</h6>
-      <p class="marg">Let's build something together!</p>
+      <h6 class="marg">Me contacter</h6>
+      <p class="marg">Construisons quelque chose ensemble !</p>
     </div>
 
     <form ref="form" @submit="sendEmail" class="form">
       <label for="name">
-        Full Name
+        Nom complet
         <input
           type="text"
           id="name"
           name="user_name"
-          placeholder="Your full name"
+          placeholder="Votre nom complet"
           required
           autocomplete="name"
           maxlength="100"
@@ -61,7 +61,7 @@ const sendEmail = async (e) => {
           type="email"
           id="email"
           name="user_email"
-          placeholder="your@email.com"
+          placeholder="votre@email.com"
           required
           autocomplete="email"
           maxlength="255"
@@ -73,26 +73,26 @@ const sendEmail = async (e) => {
         <textarea
           id="message"
           name="message"
-          placeholder="Your message..."
+          placeholder="Votre message..."
           required
           maxlength="500"
         ></textarea>
       </label>
 
-      <button 
-        type="submit" 
-        class="btn-sub" 
+      <button
+        type="submit"
+        class="btn-sub"
         :disabled="isSubmitting"
-        title="Send your message"
+        title="Envoyer votre message"
       >
-        {{ isSubmitting ? 'Envoi...' : 'Send Message' }}
+        {{ isSubmitting ? 'Envoi...' : 'Envoyer' }}
       </button>
 
       <div v-if="submitStatus === 'success'" class="status-message success">
-        ✓ Message sent successfully!
+        ✓ Message envoyé avec succès !
       </div>
       <div v-if="submitStatus === 'error'" class="status-message error">
-        ✗ Failed to send message. Please try again.
+        ✗ Échec de l'envoi. Veuillez réessayer.
       </div>
     </form>
   </section>
@@ -106,7 +106,7 @@ const sendEmail = async (e) => {
 }
 
 p {
-  color: #999;
+  color: var(--text-secondary);
 }
 
 .top {
@@ -134,7 +134,7 @@ label {
   flex-direction: column;
   font-size: 12px;
   line-height: 1.2em;
-  color: #999;
+  color: var(--text-secondary);
   font-weight: 600;
 }
 

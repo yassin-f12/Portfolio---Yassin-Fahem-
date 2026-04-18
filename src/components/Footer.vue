@@ -1,11 +1,15 @@
 <script setup>
+import { ref } from 'vue'
+import MentionsLegales from './MentionsLegales.vue'
+
 const year = new Date().getFullYear()
+const showMentions = ref(false)
 </script>
 
 <template>
   <footer id="footer" class="footer">
     <p class="footer-text">
-      © {{ year }} Yassin F. — All rights reserved
+      © {{ year }} Yassin F. — Tous droits réservés
     </p>
 
     <div class="footer-links">
@@ -14,7 +18,7 @@ const year = new Date().getFullYear()
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
-        title="My GitHub" 
+        title="Mon GitHub" 
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -29,7 +33,7 @@ const year = new Date().getFullYear()
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
-        title="My LinkedIn"
+        title="Mon LinkedIn"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -44,11 +48,17 @@ const year = new Date().getFullYear()
         target="_blank"
         rel="noopener noreferrer"
         class="cv-link"
-        title="View CV"
+        title="Voir CV"
       >
         CV 
       </a>
+
+      <button class="mentions-btn" @click="showMentions = true">
+        Mentions légales
+      </button>
     </div>
+
+    <MentionsLegales v-model="showMentions" />
   </footer>
 </template>
 
@@ -94,6 +104,23 @@ const year = new Date().getFullYear()
   font-weight: 600;
   text-decoration: none;
   color: #374141;
+}
+
+.mentions-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374141;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mentions-btn:hover {
+  color: #111827;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 480px) {

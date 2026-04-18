@@ -1,27 +1,28 @@
 <template>
-  <section id="about" class="about fade-in">
+  <section id="a-propos" class="about fade-in">
     <div class="top">
       <h4 class="marg">Yassin Fahem</h4>
-      <span class="marg">Developer</span>
+      <span class="marg">Développeur</span>
     </div>
 
     <div class="content">
-      <p class="para-1">I'm Yassin, a passionate full-stack web developer. I love building seamless, scalable applications that combine great design with strong performance.</p>
-      <p class="para-2">With hands-on experience in modern JavaScript frameworks, backend technologies, and database management, I thrive on creating end-to-end solutions. I pay close attention to UI/UX and write clean, maintainable code.</p>
-      <p class="para-3">I'm always eager to learn new technologies and tackle challenges. My goal is to solve problems collaboratively and build impactful digital experiences. Let's build the web together!</p>
+      <p class="para-1">Je suis Yassin, développeur full-stack passionné par le web et le mobile. J'aime concevoir des applications modernes, scalables et soignées qui allient design et performance.</p>
+      <p class="para-2">Avec une expérience concrète en frameworks JavaScript modernes — Vue.js, React, mais aussi React Native pour le mobile — je conçois des solutions de bout en bout. J'accorde une attention particulière à l'UI/UX et j'écris un code propre et maintenable.</p>
+      <p class="para-3">Toujours curieux d'apprendre, je cherche activement un contrat d'alternance pour continuer à progresser et contribuer à des projets concrets au sein d'une équipe.</p>
     </div>
   </section>
 
   <section class="competences fade-in">
-    <p class="tit">My Skills</p>
+    <p class="tit">Compétences</p>
     <div class="skills">
       <div class="skill-category">
         <span>Front-End</span>
         <div class="stack">
           <p>HTML5 / CSS3</p>
-          <p>JavaScript</p>
+          <p>JavaScript / TypeScript</p>
           <p>Vue.js</p>
           <p>React</p>
+          <p>React Native / Expo</p>
           <p>Sass</p>
           <p>Responsive Design</p>
         </div>
@@ -30,22 +31,27 @@
         <span>Back-End</span>
         <div class="stack">
           <p>PHP 8</p>
-          <p>API REST (CRUD)</p>
-          <p>MVC Architecture</p>
-          <p>Form Handling</p>
+          <p>API REST</p>
+          <p>Architecture MVC</p>
+          <p>Authentification</p>
         </div>
       </div>
       <div class="skill-category">
-        <span>Database & Tools</span>
+        <span>Base de données & Outils</span>
         <div class="stack">
           <p>MySQL</p>
           <p>Docker</p>
-          <p>Git</p>
+          <p>GitHub / GitLab</p>
+          <p>Figma</p>
+          <p>Agile / Scrum</p>
         </div>
       </div>
       <div class="skill-category">
-        <span>Education</span>
-        <p>DWWM (Web and Mobile Developer)</p>
+        <span>Formation</span>
+        <div class="stack">
+          <p>Titre Pro DWWM (Bac+2)</p>
+          <p>En recherche d'alternance CDA (Bac+3)</p>
+        </div>
       </div>
     </div>
   </section>
@@ -69,7 +75,7 @@ h4 {
 
 span {
   font-weight: 650;
-  color: #999;
+  color: var(--text-secondary);
   font-size: 24px;
   letter-spacing: -0.02em;
 }
@@ -87,7 +93,7 @@ span {
 }
 
 .content p {
-  color: #777;
+  color: var(--text-secondary);
   font-size: 15px;
   font-weight: 500;
   letter-spacing: -0.01em;
@@ -104,7 +110,7 @@ span {
 .competences .tit {
   font-size: 22px;
   font-weight: 650;
-  color: #0f172a; 
+  color: #0f172a;
 }
 
 .skills {
@@ -120,13 +126,14 @@ span {
 .skill-category span {
   font-size: 16px;
   font-weight: 600;
-  color: #1e293b; 
+  color: #1e293b;
   margin-bottom: 6px;
+  display: block;
 }
 
 .skill-category p {
   font-size: 14px;
-  color: #475569; 
+  color: var(--text-secondary);
   line-height: 1.4em;
 }
 
@@ -134,6 +141,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-top: 6px;
 }
 
 @media (max-width: 1024px) {

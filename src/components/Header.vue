@@ -17,9 +17,9 @@ const closeMenu = () => {
     <h1 class="logo" title="Fahem Yassin">YF.</h1>
 
     <nav class="desktop-nav">
-        <a href="#projects" title="View my projects">Projects</a> 
-        <a href="#about" title="About me">About</a> 
-        <a href="#contact" title="Contact me">Contact</a>
+        <a href="#projets" title="Voir mes projets">Projets</a> 
+        <a href="#a-propos" title="À propos de moi">À propos</a> 
+        <a href="#contact" title="Me contacter">Contact</a>
     </nav>
 
     <button 
@@ -49,21 +49,21 @@ const closeMenu = () => {
 
     <Transition name="slide">
       <nav v-if="isMenuOpen" class="mobile-nav">
-        <a href="#projects" @click="closeMenu">Projects</a> 
-        <a href="#about" @click="closeMenu">About</a> 
+        <a href="#projets" @click="closeMenu">Projets</a> 
+        <a href="#a-propos" @click="closeMenu">À propos</a> 
         <a href="#contact" @click="closeMenu">Contact</a>
       </nav>
     </Transition>
   </header>
 
-  <section class="bloc fade-in"  title="Who I am">
+  <section class="bloc fade-in" title="Qui je suis">
     <div class="titles">
-        <h2 class="title">Full-Stack Developer.</h2>
-        <h3 class="title">Building modern web experiences.</h3>
+        <h2 class="title">Développeur Full-Stack.</h2>
+        <h3 class="title">Création d'expériences web modernes.</h3>
     </div>
     <div class="btns">
-        <a href="#projects" title="View my projects" class="project-btn btn">View Projects</a>
-        <a href="#contact" title="Contact me" class="contact-btn btn">Contact Me</a>
+        <a href="#projets" title="Voir mes projets" class="project-btn btn">Voir mes projets</a>
+        <a href="#contact" title="Me contacter" class="contact-btn btn">Me contacter</a>
     </div>
   </section>
 </template>
@@ -80,6 +80,7 @@ header {
 h1.logo {
     font-weight: 700;
     letter-spacing: -0.04em;
+    user-select: none;
 }
 
 .desktop-nav {
@@ -89,7 +90,7 @@ h1.logo {
 
 .desktop-nav a {
     font-size: 1em;
-    color: #999;
+    color: var(--text-muted);
     letter-spacing: -0.04em;
 }
 
@@ -106,7 +107,7 @@ h1.logo {
 .burger-btn svg {
     width: 28px;
     height: 28px;
-    color: #000;
+    color: var(--text-primary);
     display: block;
 }
 
@@ -152,7 +153,7 @@ h1.logo {
 }
 
 .titles h3 {
-    color: #999;
+    color: var(--text-secondary);
 }
 
 .btns {
@@ -199,7 +200,7 @@ h1.logo {
 
     .mobile-nav a {
         font-size: 18px;
-        color: #000;
+        color: var(--text-muted);
         font-weight: 600;
         letter-spacing: -0.02em;
     }
