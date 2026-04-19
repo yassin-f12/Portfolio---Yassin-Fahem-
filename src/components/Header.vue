@@ -118,7 +118,7 @@ h1.logo {
     border: none;
     cursor: pointer;
     padding: 8px;
-    z-index: 1000;
+    z-index: 100;
     position: relative;
 }
 
