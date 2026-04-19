@@ -104,8 +104,10 @@ onUnmounted(() => {
     top: 0;
     bottom: 0;
     width: 50px;
-    z-index: 1001;
+    z-index: 100;
     pointer-events: none;
+    max-width: 50px;
+    overflow: hidden;
 }
 
 .rope-svg {
