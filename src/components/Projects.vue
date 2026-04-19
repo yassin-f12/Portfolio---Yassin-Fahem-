@@ -23,7 +23,7 @@ import tracker6 from'@/assets/img/tracker6.jpeg'
 import tracker7 from'@/assets/img/tracker7.jpeg'
 import tracker8 from'@/assets/img/tracker8.jpeg'
 import tracker9 from'@/assets/img/tracker9.jpeg'
-import qrapk from '@/assets/img/QRapk.jpg'
+import qrapk from '@/assets/img/QRapk.png'
 import qrgo from '@/assets/img/QRgo.png'
 
 const isMobile = ref(false);
@@ -91,7 +91,7 @@ const projects = [
     qrCode: qrgo,
     qrCodeAndroid: qrapk,
     linkExpo: 'https://expo.dev/preview/update?message=fix%3A+Android+layout%2C+keyboard+and+shadow+issues&updateRuntimeVersion=1.0.0&createdAt=2026-04-19T13%3A41%3A19.954Z&slug=exp&projectId=92ecb343-9a23-407a-b887-a22915c71c4f&group=6bd20ca7-dad0-488d-8602-32e002277730',
-    linkApk: 'https://github.com/yassin-f12/tracker-app/releases/download/v1.0.0/application-3765f356-61cc-449f-9ca5-964373a77196.apk',
+    linkApk: 'https://github.com/yassin-f12/tracker-app/releases/download/v1.0.0/application-d13ce239-4711-438e-923f-e257346d10d5.apk',
     date: '2026',
     role: 'Développeur Mobile',
     team: 'Projet solo - Apprentissage personnel',
