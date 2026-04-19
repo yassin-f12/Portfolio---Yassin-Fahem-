@@ -6,12 +6,14 @@ import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue';
 import BackToTop from './components/BackToTop.vue';
 import { useScrollAnimation } from './composables/useScrollAnimation'
+import ScrollDude from './components/ScrollDude.vue';
 
 useScrollAnimation()
 </script>
 
 <template>
-    <Header class="fade-in" />
+    <ScrollDude />
+    <Header />
     <Projects class="fade-in" />
     <About class="fade-in" />
     <Contact class="fade-in" />
@@ -24,6 +26,11 @@ useScrollAnimation()
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 html {
