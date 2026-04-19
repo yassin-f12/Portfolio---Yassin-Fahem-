@@ -97,6 +97,7 @@ header {
     align-items: center;
     margin: 2% 5%;
     position: relative;
+    will-change: transform;
 }
 
 .container-logo {
@@ -173,6 +174,7 @@ h1.logo {
     align-items: center;
     gap: 45px;
     margin-top: 7%;
+    will-change: transform;
 }
 
 .titles {
@@ -196,6 +198,8 @@ h1.logo {
   position: relative;
   display: block;
   white-space: nowrap;
+  will-change: contents; 
+  min-height: 1.2em;  
 }
 
 .typewriter::after {
