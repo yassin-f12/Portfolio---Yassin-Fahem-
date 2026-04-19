@@ -4,90 +4,73 @@ import { onMounted, ref } from 'vue'
 const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
+    isMenuOpen.value = !isMenuOpen.value
 }
 
 const closeMenu = () => {
-  isMenuOpen.value = false
+    isMenuOpen.value = false
 }
 
 const title1 = ref('')
 const title2 = ref('')
 
 const typeText = (text, target, delay = 0) => {
-  const letters = text.split('')
-  letters.forEach((letter, i) => {
-    setTimeout(() => {
-      target.value += letter
-    }, delay + i * 40)
-  })
+    const letters = text.split('')
+    letters.forEach((letter, i) => {
+        setTimeout(() => {
+            target.value += letter
+        }, delay + i * 40)
+    })
 }
 
 onMounted(() => {
-  const t1 = 'Développeur Full-Stack.'
-  const t2 = 'Création d\'expériences web modernes.'
-  typeText(t1, title1)
-  typeText(t2, title2, t1.length * 40 + 300)
+    const t1 = 'Développeur Full-Stack.'
+    const t2 = 'Création d\'expériences web modernes.'
+    typeText(t1, title1)
+    typeText(t2, title2, t1.length * 40 + 300)
 })
 </script>
 
 <template>
-  <header class="fade-in">
-    <div class="container-logo">
-        <h1 class="logo" title="Fahem Yassin">YF</h1>
-        <span>•</span>
-    </div>
+    <header>
+        <div class="container-logo">
+            <h1 class="logo" title="Fahem Yassin">YF</h1>
+            <span>•</span>
+        </div>
 
-    <nav class="desktop-nav">
-        <a href="#projets" title="Voir mes projets">Projets</a> 
-        <a href="#a-propos" title="À propos de moi">À propos</a> 
-        <a href="#contact" title="Me contacter">Contact</a>
-    </nav>
+        <nav class="desktop-nav">
+            <a href="#projets" title="Voir mes projets">Projets</a>
+            <a href="#a-propos" title="À propos de moi">À propos</a>
+            <a href="#contact" title="Me contacter">Contact</a>
+        </nav>
 
-    <button 
-      class="burger-btn" 
-      @click="toggleMenu"
-      aria-label="Toggle menu"
-      :aria-expanded="isMenuOpen"
-    >
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path 
-          class="line line1" 
-          :class="{ 'open': isMenuOpen }"
-          d="M4 6h16"
-        />
-        <path 
-          class="line line2" 
-          :class="{ 'open': isMenuOpen }"
-          d="M4 12h16"
-        />
-        <path 
-          class="line line3" 
-          :class="{ 'open': isMenuOpen }"
-          d="M4 18h16"
-        />
-      </svg>
-    </button>
+        <button class="burger-btn" @click="toggleMenu" aria-label="Toggle menu" :aria-expanded="isMenuOpen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path class="line line1" :class="{ 'open': isMenuOpen }" d="M4 6h16" />
+                <path class="line line2" :class="{ 'open': isMenuOpen }" d="M4 12h16" />
+                <path class="line line3" :class="{ 'open': isMenuOpen }" d="M4 18h16" />
+            </svg>
+        </button>
 
-    <Transition name="slide">
-      <nav v-if="isMenuOpen" class="mobile-nav">
-        <a href="#projets" @click="closeMenu">Projets</a> 
-        <a href="#a-propos" @click="closeMenu">À propos</a> 
-        <a href="#contact" @click="closeMenu">Contact</a>
-      </nav>
-    </Transition>
-  </header>
+        <Transition name="slide">
+            <nav v-if="isMenuOpen" class="mobile-nav">
+                <a href="#projets" @click="closeMenu">Projets</a>
+                <a href="#a-propos" @click="closeMenu">À propos</a>
+                <a href="#contact" @click="closeMenu">Contact</a>
+            </nav>
+        </Transition>
+    </header>
 
-  <section class="bloc fade-in" title="Qui je suis">
-    <div class="titles">
-        <h2 class="title typewriter">{{ title1 }}</h2>
-        <h3 class="title typewriter">{{ title2 }}</h3>
-    </div>
-    <div class="btns">
-        <a href="#projets" title="Voir mes projets" class="project-btn btn">Voir mes projets</a>
-        <a href="#contact" title="Me contacter" class="contact-btn btn">Me contacter</a>
-    </div>
-  </section>
+    <section class="bloc fade-in" title="Qui je suis">
+        <div class="titles">
+            <h2 class="title typewriter">{{ title1 }}</h2>
+            <h3 class="title typewriter">{{ title2 }}</h3>
+        </div>
+        <div class="btns">
+            <a href="#projets" title="Voir mes projets" class="project-btn btn">Voir mes projets</a>
+            <a href="#contact" title="Me contacter" class="contact-btn btn">Me contacter</a>
+        </div>
+    </section>
 </template>
 
 <style scoped>
@@ -97,7 +80,6 @@ header {
     align-items: center;
     margin: 2% 5%;
     position: relative;
-    will-change: transform;
 }
 
 .container-logo {
@@ -164,10 +146,6 @@ h1.logo {
     transform: rotate(-45deg) translate(1px, -1px);
 }
 
-.mobile-nav {
-    display: none;
-}
-
 .bloc {
     display: flex;
     flex-direction: column;
@@ -194,28 +172,30 @@ h1.logo {
 }
 
 .typewriter {
-  overflow: hidden;
-  position: relative;
-  display: block;
-  white-space: nowrap;
-  will-change: contents; 
-  min-height: 1.2em;  
+    overflow: hidden;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    will-change: contents;
+    min-height: 1.2em;
 }
 
 .typewriter::after {
-  content: '';
-  position: absolute;
-  right: -4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2px;
-  height: 0.8em;
-  background: #0d1b2a;
-  animation: blink 0.7s step-end infinite;
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 0.8em;
+    background: #0d1b2a;
+    animation: blink 0.7s step-end infinite;
 }
 
 @keyframes blink {
-  50% { background: transparent; }
+    50% {
+        background: transparent;
+    }
 }
 
 .btns {
@@ -249,15 +229,15 @@ h1.logo {
     }
 
     .mobile-nav {
-        display: flex;
-        position: fixed;
+        display: flex;          
+        position: absolute;
         top: 0;
-        right: 0;
+        left: 0;   
         width: 100%;
         background-color: #fff;
-        padding: 30px 30px 30px;
+        padding: 30px;
         gap: 30px;
-        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .mobile-nav a {
@@ -292,10 +272,6 @@ h1.logo {
         margin: 4% 5%;
     }
 
-    .mobile-nav {
-        width: 100%;
-    }
-
     .titles .title {
         font-size: 28px;
     }
@@ -310,11 +286,8 @@ h1.logo {
     transition: transform 0.3s ease;
 }
 
-.slide-enter-from {
-    transform: translateX(100%);
-}
-
+.slide-enter-from,
 .slide-leave-to {
-    transform: translateX(100%);
+    transform: translateX(100vw);
 }
 </style>

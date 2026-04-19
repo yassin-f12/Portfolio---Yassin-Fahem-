@@ -174,6 +174,8 @@ onUnmounted(() => {
 @media (max-width: 780px) {
     .scroll-track {
         display: none;
+        visibility: hidden;
+        pointer-events: none;
     }
 }
 </style>
