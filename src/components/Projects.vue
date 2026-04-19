@@ -90,7 +90,7 @@ const projects = [
     link: 'https://github.com/yassin-f12/tracker-app',
     qrCode: qrgo,
     qrCodeAndroid: qrapk,
-    linkExpo: 'https://expo.dev/preview/update?message=update+password+forget&updateRuntimeVersion=1.0.0&createdAt=2026-04-16T13%3A47%3A48.695Z&slug=exp&projectId=92ecb343-9a23-407a-b887-a22915c71c4f&group=baaf39d4-1e9c-4bf0-a319-0e974a0ee6a1',
+    linkExpo: 'https://expo.dev/preview/update?message=fix%3A+Android+layout%2C+keyboard+and+shadow+issues&updateRuntimeVersion=1.0.0&createdAt=2026-04-19T13%3A41%3A19.954Z&slug=exp&projectId=92ecb343-9a23-407a-b887-a22915c71c4f&group=6bd20ca7-dad0-488d-8602-32e002277730',
     linkApk: 'https://github.com/yassin-f12/tracker-app/releases/download/v1.0.0/application-3765f356-61cc-449f-9ca5-964373a77196.apk',
     date: '2026',
     role: 'Développeur Mobile',
