@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const isMenuOpen = ref(false)
 
@@ -10,11 +10,33 @@ const toggleMenu = () => {
 const closeMenu = () => {
   isMenuOpen.value = false
 }
+
+const title1 = ref('')
+const title2 = ref('')
+
+const typeText = (text, target, delay = 0) => {
+  const letters = text.split('')
+  letters.forEach((letter, i) => {
+    setTimeout(() => {
+      target.value += letter
+    }, delay + i * 40)
+  })
+}
+
+onMounted(() => {
+  const t1 = 'Développeur Full-Stack.'
+  const t2 = 'Création d\'expériences web modernes.'
+  typeText(t1, title1)
+  typeText(t2, title2, t1.length * 40 + 300)
+})
 </script>
 
 <template>
   <header class="fade-in">
-    <h1 class="logo" title="Fahem Yassin">YF.</h1>
+    <div class="container-logo">
+        <h1 class="logo" title="Fahem Yassin">YF</h1>
+        <span>•</span>
+    </div>
 
     <nav class="desktop-nav">
         <a href="#projets" title="Voir mes projets">Projets</a> 
@@ -58,8 +80,8 @@ const closeMenu = () => {
 
   <section class="bloc fade-in" title="Qui je suis">
     <div class="titles">
-        <h2 class="title">Développeur Full-Stack.</h2>
-        <h3 class="title">Création d'expériences web modernes.</h3>
+        <h2 class="title typewriter">{{ title1 }}</h2>
+        <h3 class="title typewriter">{{ title2 }}</h3>
     </div>
     <div class="btns">
         <a href="#projets" title="Voir mes projets" class="project-btn btn">Voir mes projets</a>
@@ -75,6 +97,19 @@ header {
     align-items: center;
     margin: 2% 5%;
     position: relative;
+}
+
+.container-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-logo span {
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+    user-select: none;
 }
 
 h1.logo {
@@ -100,7 +135,7 @@ h1.logo {
     border: none;
     cursor: pointer;
     padding: 8px;
-    z-index: 1001;
+    z-index: 1000;
     position: relative;
 }
 
@@ -154,6 +189,29 @@ h1.logo {
 
 .titles h3 {
     color: var(--text-secondary);
+}
+
+.typewriter {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  white-space: nowrap;
+}
+
+.typewriter::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 0.8em;
+  background: #0d1b2a;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% { background: transparent; }
 }
 
 .btns {
@@ -218,6 +276,10 @@ h1.logo {
     .btn {
         text-align: center;
         padding: 10px;
+    }
+
+    .typewriter {
+        white-space: normal;
     }
 }
 
