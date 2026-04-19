@@ -1,33 +1,32 @@
 # Portfolio - Yassin Fahem 👨💻
 
-Modern and responsive personal portfolio of a Full-Stack developer, built with Vue.js 3.
+Portfolio personnel moderne et responsive d'un développeur Full-Stack, construit avec Vue.js 3.
 
-## 🎯 Overview
+## 🎯 Aperçu
 
-This portfolio showcases my skills, projects, and provides an easy way to contact me. It's designed with special attention to user experience, smooth animations, and performance.
+Ce portfolio met en valeur mes compétences, mes projets, et offre un moyen simple de me contacter. Il est conçu avec une attention particulière à l'expérience utilisateur, aux animations fluides et aux performances.
 
-## ✨ Features
+## ✨ Fonctionnalités
 
-- 🎨 Modern and clean design
-- 📱 Fully responsive
-- ⚡ Smooth animations and elegant transitions
-- 📧 Functional contact form (EmailJS)
-- 🔝 Dynamic "back to top" button
-- 🎭 Parallax effects and scroll animations
-- ⚡ Optimized performance
+- 🎨 Design moderne et épuré
+- 📱 Entièrement responsive
+- ⚡ Animations fluides et transitions élégantes
+- 📧 Formulaire de contact fonctionnel (EmailJS)
+- 🔝 Bouton "retour en haut" dynamique
+- ⚡ Performances optimisées
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies utilisées
 
-- **Framework**: Vue.js 3 (Composition API)
-- **Build tool**: Vite
-- **Email service**: EmailJS
-- **Styling**: Native CSS with modern design
+- **Framework** : Vue.js 3 (Composition API)
+- **Outil de build** : Vite
+- **Service email** : EmailJS
+- **Style** : CSS natif avec un design moderne
 
-## 👨💻 Author
+## 👨💻 Auteur
 
 **Yassin**
 
-- GitHub: [@yassin-f12](https://github.com/yassin-f12)
-- Live Site: [Portfolio](https://yassin-f12.github.io/Portfolio---Yassin-Fahem-/)
+- GitHub : [@yassin-f12](https://github.com/yassin-f12)
+- Site en ligne : [Portfolio](https://yassin-f12.github.io/Portfolio---Yassin-Fahem-/)
 
-⭐ **If this project helped you, feel free to give it a star!** ⭐
+⭐ **Si mon portfolio t'a plu, n'hésite pas à lui mettre une étoile !** ⭐
