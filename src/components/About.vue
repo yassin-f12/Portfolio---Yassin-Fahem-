@@ -31,7 +31,7 @@
         <span>Back-End</span>
         <div class="stack">
           <p>PHP 8</p>
-          <p>API REST</p>
+          <p>Gestion des flux client-serveur</p>
           <p>Architecture MVC</p>
           <p>Authentification</p>
         </div>

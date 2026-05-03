@@ -123,7 +123,7 @@ const projects = [
     role: 'Développeur Full Stack - Responsable Forum & Interactions',
     team: '3 développeurs',
     methodology: 'Méthode Agile adaptée - sprints de 2 à 3 semaines, réunions hebdomadaires, démonstrations client à chaque phase. Gestion des tâches sur Trello (Kanban), planning Gantt sur Google Sheets, centralisation des documents sur Google Drive. Communication client via Gmail avec comptes-rendus et validations à chaque livrable.',
-    stack: ['Vue.js 3', 'PHP 8.3', 'MySQL', 'Docker', 'GitLab', 'Figma', 'Pinia', 'Axios', 'JWT', 'Vite'],
+    stack: ['Vue.js 3', 'PHP 8.3', 'MySQL', 'PDO', 'Docker', 'GitLab', 'Figma', 'Pinia', 'Axios', 'JWT', 'Vite'],
     highlights: [
       'Espace membres complet : profils personnalisables, gestion des rôles',
       'Gestion des adhésions : formulaire en ligne, validation admin, notifications automatiques, génération de PDF',
@@ -132,7 +132,7 @@ const projects = [
       'Système de notifications en temps réel : alertes, mentions, topics urgents, automatisations CRON',
       'Moteur de recherche interne au forum',
       'Génération de PDF, mailing automatique, formulaire de contact avec accusé de réception',
-      'Architecture MVC PHP 8.3, API REST sécurisée JWT, conformité RGPD complète',
+      'Architecture MVC PHP 8.3, JWT, conformité RGPD complète',
       'Maquettage Figma haute-fidélité, design system partagé',
       'Tests unitaires Vitest',
       'Retour client unanimement positif - les adhérents ont hâte d\'utiliser le nouveau site',
