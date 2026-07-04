@@ -217,12 +217,12 @@ onUnmounted(() => {
                         <div class="card dl">
                             <span class="section-label">Télécharger / Tester</span>
                             <div class="install-note">
-                                <p><strong>Expo Go</strong> (iOS & Android) - Télécharge <strong>Expo Go</strong> sur l'App Store ou le Play Store, puis scanne le QR code.</p>
+                                <!-- <p><strong>Expo Go</strong> (iOS & Android) - Télécharge <strong>Expo Go</strong> sur l'App Store ou le Play Store, puis scanne le QR code.</p> -->
                                 <p><strong>Android APK</strong> - Téléchargez l'APK, puis rendez-vous dans <code>Paramètres → Applications → Accès spécial → Installer des applis inconnues → [choisir l'app] → Autoriser depuis cette source</code> et ouvrez le fichier.</p>
                             </div>
                         </div>
                         <div class="dl qr">
-                            <div class="platform-block">
+                            <!-- <div class="platform-block">
                                 <span class="platform-title">iOS - Expo Go</span>
                                 <img v-if="project.qrCode" :src="project.qrCode" alt="QR Code Expo Go"
                                     class="qr-code" />
@@ -236,7 +236,7 @@ onUnmounted(() => {
                                         <line x1="10" y1="14" x2="21" y2="3" />
                                     </svg>
                                 </a>
-                            </div>
+                            </div> -->
 
                             <div class="platform-block">
                                 <span class="platform-title">Android - APK</span>
