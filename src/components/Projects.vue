@@ -21,7 +21,7 @@ import tracker4 from "@/assets/img/tracker4.jpeg";
 import tracker5 from "@/assets/img/tracker5.jpeg";
 import tracker6 from "@/assets/img/tracker6.jpeg";
 import tracker7 from "@/assets/img/tracker7.jpeg";
-import tracker8 from "@/assets/img/tracker8.jpeg";
+//import tracker8 from "@/assets/img/tracker8.jpeg";
 import tracker9 from "@/assets/img/tracker9.jpeg";
 import qrapk from "@/assets/img/QRapk.png";
 import qrgo from "@/assets/img/QRgo.png";
@@ -116,7 +116,7 @@ const projects = [
     image: welcome,
     screenshots: [
       tracker7,
-      tracker8,
+      //tracker8,
       tracker9,
       tracker6,
       tracker1,
