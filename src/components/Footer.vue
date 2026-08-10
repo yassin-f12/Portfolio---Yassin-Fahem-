@@ -47,10 +47,10 @@ const showMentions = ref(false)
         href="/Portfolio---Yassin-Fahem-/CV_Yassin_Fahem.pdf" 
         target="_blank"
         rel="noopener noreferrer"
-        class="cv-link"
-        title="Voir CV"
+        class="cv-link mentions-btn"
+        title="Voir mon CV"
       >
-        CV 
+        Voir mon CV 
       </a>
 
       <button class="mentions-btn" @click="showMentions = true">
