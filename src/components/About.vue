@@ -2,13 +2,13 @@
   <section id="a-propos" class="about fade-in">
     <div class="top">
       <h4 class="marg">Yassin Fahem</h4>
-      <span class="marg">Développeur</span>
+      <span class="marg">Développeur Full Stack</span>
     </div>
 
     <div class="content">
       <p class="para-1">Je suis Yassin, développeur full-stack passionné par le web et le mobile. J'aime concevoir des applications modernes, scalables et soignées qui allient design et performance.</p>
-      <p class="para-2">Avec une expérience concrète en frameworks JavaScript modernes — Vue.js, React, mais aussi React Native pour le mobile — je conçois des solutions de bout en bout. J'accorde une attention particulière à l'UI/UX et j'écris un code propre et maintenable.</p>
-      <p class="para-3">Toujours curieux d'apprendre, je cherche activement un contrat d'alternance pour continuer à progresser et contribuer à des projets concrets au sein d'une équipe.</p>
+      <p class="para-2">Avec une expérience concrète en frameworks JavaScript modernes - Vue.js, React, mais aussi React Native pour le mobile - je conçois des solutions de bout en bout. J'accorde une attention particulière à l'UI/UX et j'écris un code propre et maintenable. Ma formation CDA m'ouvre aussi à Angular et Java pour des architectures d'entreprise.</p>
+      <p class="para-3">Toujours curieux d'apprendre, je cherche activement un stage du 6 avril au 6 août 2027 pour continuer à progresser et contribuer à des projets concrets au sein d'une équipe.</p>
     </div>
   </section>
 
@@ -20,6 +20,7 @@
         <div class="stack">
           <p>HTML5 / CSS3</p>
           <p>JavaScript / TypeScript</p>
+          <p>Angular</p>
           <p>Vue.js</p>
           <p>React</p>
           <p>React Native / Expo</p>
@@ -30,8 +31,10 @@
       <div class="skill-category">
         <span>Back-End</span>
         <div class="stack">
+          <p>Java</p>
           <p>PHP 8</p>
-          <p>Gestion des flux client-serveur</p>
+          <p>Node.js</p>
+          <p>API REST</p>
           <p>Architecture MVC</p>
           <p>Authentification</p>
         </div>
@@ -44,13 +47,15 @@
           <p>GitHub / GitLab</p>
           <p>Figma</p>
           <p>Agile / Scrum</p>
+          <p>CI/CD</p>
         </div>
       </div>
       <div class="skill-category">
-        <span>Formation</span>
+        <span>Formations</span>
         <div class="stack">
-          <p>Titre Pro DWWM (Bac+2)</p>
-          <p>En recherche d'alternance CDA (Bac+3)</p>
+          <p>Titre Pro Concepteur Développeur d'Applications (CDA), Bac+3 - M2i Formation, 2026 - 2027</p>
+          <p>Titre Pro Développeur Web et Web Mobile (DWWM), Bac+2 - CCI Nord Isère, 2024 - 2025</p>
+          <p>Recherche de stage : 6 avril - 6 août 2027 (4 mois)</p>
         </div>
       </div>
     </div>
